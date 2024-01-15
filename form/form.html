@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+
+  <h2>Formulário de Inscrição</h2>
+
+  <form action="#" method="post">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br>
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required><br>
+
+    <label>Gênero:</label>
+    <input type="radio" id="masculino" name="sexo" value="M">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="sexo" value="F">
+    <label for="feminino">Feminino</label><br>
+
+    <label>Estado Civil:</label>
+    <input type="checkbox" id="solteiro" name="estadoCivil" value="Solteiro">
+    <label for="solteiro">Solteiro(a)</label>
+    <input type="checkbox" id="casado" name="estadoCivil" value="Casado">
+    <label for="casado">Casado(a)</label>
+    <input type="checkbox" id="uniaoEstavel" name="estadoCivil" value="União Estável">
+    <label for="uniaoEstavel">União Estável(a)</label>
+    <input type="checkbox" id="divorciado" name="estadoCivil" value="Divorciado">
+    <label for="divorciado">Divorciado(a)</label><br>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required><br>
+
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro" required><br>
+
+    <label for="complemento">Complemento:</label>
+    <input type="text" id="complemento" name="complemento"><br>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="saude">Tem problemas de saúde? Alergias? Qual?</label>
+    <textarea id="saude" name="saude"></textarea><br>
+
+    <label for="coluna">Tem problema de coluna?</label>
+    <input type="radio" id="colunaSim" name="coluna" value="Sim">
+    <label for="colunaSim">Sim</label>
+    <input type="radio" id="colunaNao" name="coluna" value="Não">
+    <label for="colunaNao">Não</label>
+    <label for="colunaQual">Qual?</label>
+    <input type="text" id="colunaQual" name="colunaQual"><br>
+
+    <label for="medicamento">Toma algum medicamento? Qual?</label>
+    <input type="text" id="medicamento" name="medicamento"><br>
+
+    <label for="apneia">Tem apneia (ronca)?</label>
+    <input type="radio" id="apneiaSim" name="apneia" value="Sim">
+    <label for="apneiaSim">Sim</label>
+    <input type="radio" id="apneiaNao" name="apneia" value="Não">
+    <label for="apneiaNao">Não</label><br>
+
+    <label for="dieta">Faz dieta controlada?</label>
+    <input type="radio" id="dietaSim" name="dieta" value="Sim">
+    <label for="dietaSim">Sim</label>
+    <input type="radio" id="dietaNao" name="dieta" value="Não">
+    <label for="dietaNao">Não</label>
+    <label for="dietaEspecifique">Especifique:</label>
+    <input type="text" id="dietaEspecifique" name="dietaEspecifique"><br>
+
+    <label for="peso">Peso:</label>
+    <input type="number" id="peso" name="peso"><br>
+
+    <label for="membroIEB">É membro da IEB?</label>
+    <input type="radio" id="membroIEBSim" name="membroIEB" value="Sim">
+    <label for="membroIEBSim">Sim</label>
+    <input type="radio" id="membroIEBNao" name="membroIEB" value="Não">
+    <label for="membroIEBNao">Não</label><br>
+
+    <label for="membroCelula">É membro de alguma célula?</label>
+    <input type="radio" id="membroCelulaSim" name="membroCelula" value="Sim">
+    <label for="membroCelulaSim">Sim</label>
+    <input type="radio" id="membroCelulaNao" name="membroCelula" value="Não">
+    <label for="membroCelulaNao">Não</label>
+    <label for="celulaQual">Qual?</label>
+    <input type="text" id="celulaQual" name="celulaQual"><br>
+
+    <label for="membroIgreja">É membro de alguma igreja?</label>
+    <input type="radio" id="membroIgrejaSim" name="membroIgreja" value="Sim">
+    <label for="membroIgrejaSim">Sim</label>
+    <input type="radio" id="membroIgrejaNao" name="membroIgreja" value="Não">
+    <label for="membroIgrejaNao">Não</label>
+    <label for="igrejaQual">Qual?</label>
+    <input type="text" id="igrejaQual" name="igrejaQual"><br>
+
+    <label for="contato">Nome e telefone de um familiar próximo ou amigo(a) para contato:</label>
+    <input type="text" id="contato" name="contato"><br>
+
+    <label for="foto">Espaço foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*"><br>
+
+    <label for="valor">Valor: R$ 250,00 (Duzentos e cinquenta reais)</label><br>
+
+    <label>Forma de pagamento:</label>
+    <input type="radio" id="pagamentoVista" name="formaPagamento" value="À vista/PIX">
+    <label for="pagamentoVista">À vista/PIX</label>
+    <input type="radio" id="pagamentoCartao" name="formaPagamento" value="Cartão">
+    <label for="pagamentoCartao">Cartão</label><br>
+
+    <label for="dataInscricao">Data da inscrição:</label>
+    <input type="date" id="dataInscricao" name="dataInscricao" required><br>
+
+    <p><strong>Atenção:</strong> Em caso de desistência não será devolvido o valor pago, devido aos investimentos já
+      executados.</p>
+
+    <label for="observacoes">Observações:</label><br>
+    <textarea id="observacoes" name="observacoes"></textarea><br>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+</body>
+
+</html>
