@@ -745,6 +745,24 @@ label {
   }
 }
 
+.header-toggle button {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.header-toggle button span {
+  width: 25px;
+  height: 2px;
+  background: #fc097c;
+  margin: 5px 0;
+  display: block;
+}
+
+.header-toggle button span:last-child {
+  margin-bottom: 0;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -939,6 +957,114 @@ label {
 
 .header-navigation .sub-menu li:hover>.sub-menu {
   top: -20px;
+}
+
+.offcanvas {
+  background: #311a79;
+  width: 320px;
+}
+
+@media only screen and (max-width: 575px) {
+  .offcanvas {
+    width: 280px;
+  }
+}
+
+.offcanvas-header .close-btn {
+  background: none;
+  border: 0;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.offcanvas-header .close-btn:hover {
+  transform: rotate(90deg);
+  color: #fc097c;
+}
+
+.offcanvas-logo a img {
+  width: 130px;
+}
+
+.offcanvas-menu {
+  padding: 30px 0;
+}
+
+.offcanvas-menu .main-menu li {
+  position: relative;
+}
+
+.offcanvas-menu .main-menu li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Big Shoulders Display", cursive;
+  color: #ffffff;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.offcanvas-menu .main-menu li .mobile-menu-expand {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.offcanvas-menu .main-menu li .mobile-menu-expand::before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.offcanvas-menu .main-menu li .mobile-menu-expand::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.offcanvas-menu .main-menu li:hover>a {
+  color: #fc097c;
+}
+
+.offcanvas-menu .main-menu li.active-expand>.mobile-menu-expand::after {
+  height: 0;
+}
+
+.offcanvas-menu .main-menu li ul {
+  padding-left: 6%;
+  display: none;
+}
+
+.offcanvas-menu-2 .main-menu li a {
+  font-family: "Archivo", sans-serif;
+}
+
+.offcanvas-menu-2 .main-menu li.active-expand>.mobile-menu-expand::after {
+  height: 0;
+}
+
+.offcanvas-menu-2 .main-menu li ul {
+  padding-left: 6%;
+  display: none;
 }
 
 @-webkit-keyframes sticky {
